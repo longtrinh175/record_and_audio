@@ -7,10 +7,20 @@ import Audio from './components/audioComponent'
 export default class App extends React.Component {
 	render() {
 		return (
-			<View style={{ flex: 1, flexDirection: 'column', justifyContent: "center", alignItems: "center" }}>
+			<View style={styles.container}>
 				<Record />
+				<View style={{ marginBottom: 10, marginTop: 10, }} />
 				<Audio />
 			</View>
 		);
 	}
 }
+
+const styles = StyleSheet.create({
+	container: {
+		flex: 1,
+		justifyContent: 'center',
+		marginTop: 24,
+		backgroundColor: "#EEEEEE"
+	}
+})
